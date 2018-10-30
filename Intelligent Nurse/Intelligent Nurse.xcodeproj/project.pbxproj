@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2167597F8852E6E191C07F7F /* Pods_Intelligent_Nurse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EB4FDBE52DF652EECA8A287 /* Pods_Intelligent_Nurse.framework */; };
+		4345CF98218859D900594F58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4345CF97218859D900594F58 /* AppDelegate.swift */; };
+		4345CF9A218859D900594F58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4345CF99218859D900594F58 /* ViewController.swift */; };
+		4345CF9D218859D900594F58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4345CF9B218859D900594F58 /* Main.storyboard */; };
+		4345CFA0218859D900594F58 /* Intelligent_Nurse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4345CF9E218859D900594F58 /* Intelligent_Nurse.xcdatamodeld */; };
+		4345CFA2218859D900594F58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4345CFA1218859D900594F58 /* Assets.xcassets */; };
+		4345CFA5218859D900594F58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4345CFA3218859D900594F58 /* LaunchScreen.storyboard */; };
+		4345CFB0218859D900594F58 /* Intelligent_NurseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4345CFAF218859D900594F58 /* Intelligent_NurseTests.swift */; };
+		4345CFBB218859D900594F58 /* Intelligent_NurseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4345CFBA218859D900594F58 /* Intelligent_NurseUITests.swift */; };
+		43BE78BD2188FFEF003F0D70 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BE78BC2188FFEF003F0D70 /* HealthKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4345CFAC218859D900594F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4345CF8C218859D900594F58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4345CF93218859D900594F58;
+			remoteInfo = "Intelligent Nurse";
+		};
+		4345CFB7218859D900594F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4345CF8C218859D900594F58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4345CF93218859D900594F58;
+			remoteInfo = "Intelligent Nurse";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2CB308ACF2D6F883DCBE56E2 /* Pods-Intelligent Nurse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intelligent Nurse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Intelligent Nurse/Pods-Intelligent Nurse.debug.xcconfig"; sourceTree = "<group>"; };
+		4345CF94218859D900594F58 /* Intelligent Nurse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intelligent Nurse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4345CF97218859D900594F58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4345CF99218859D900594F58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4345CF9C218859D900594F58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4345CF9F218859D900594F58 /* Intelligent_Nurse.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Intelligent_Nurse.xcdatamodel; sourceTree = "<group>"; };
+		4345CFA1218859D900594F58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4345CFA4218859D900594F58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4345CFA6218859D900594F58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4345CFAB218859D900594F58 /* Intelligent NurseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Intelligent NurseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4345CFAF218859D900594F58 /* Intelligent_NurseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intelligent_NurseTests.swift; sourceTree = "<group>"; };
+		4345CFB1218859D900594F58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4345CFB6218859D900594F58 /* Intelligent NurseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Intelligent NurseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4345CFBA218859D900594F58 /* Intelligent_NurseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intelligent_NurseUITests.swift; sourceTree = "<group>"; };
+		4345CFBC218859D900594F58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4345CFC821885C4100594F58 /* Intelligent Nurse.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Intelligent Nurse.entitlements"; sourceTree = "<group>"; };
+		43BE78BC2188FFEF003F0D70 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		7EB4FDBE52DF652EECA8A287 /* Pods_Intelligent_Nurse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Intelligent_Nurse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C89CA70944108AB844AF15C7 /* Pods-Intelligent Nurse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intelligent Nurse.release.xcconfig"; path = "Pods/Target Support Files/Pods-Intelligent Nurse/Pods-Intelligent Nurse.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4345CF91218859D900594F58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43BE78BD2188FFEF003F0D70 /* HealthKit.framework in Frameworks */,
+				2167597F8852E6E191C07F7F /* Pods_Intelligent_Nurse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4345CFA8218859D900594F58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4345CFB3218859D900594F58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03637C19341ABDAED41C50F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2CB308ACF2D6F883DCBE56E2 /* Pods-Intelligent Nurse.debug.xcconfig */,
+				C89CA70944108AB844AF15C7 /* Pods-Intelligent Nurse.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4345CF8B218859D900594F58 = {
+			isa = PBXGroup;
+			children = (
+				4345CF96218859D900594F58 /* Intelligent Nurse */,
+				4345CFAE218859D900594F58 /* Intelligent NurseTests */,
+				4345CFB9218859D900594F58 /* Intelligent NurseUITests */,
+				4345CF95218859D900594F58 /* Products */,
+				4345CFC921885C4100594F58 /* Frameworks */,
+				03637C19341ABDAED41C50F9 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		4345CF95218859D900594F58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4345CF94218859D900594F58 /* Intelligent Nurse.app */,
+				4345CFAB218859D900594F58 /* Intelligent NurseTests.xctest */,
+				4345CFB6218859D900594F58 /* Intelligent NurseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4345CF96218859D900594F58 /* Intelligent Nurse */ = {
+			isa = PBXGroup;
+			children = (
+				4345CFC821885C4100594F58 /* Intelligent Nurse.entitlements */,
+				4345CF97218859D900594F58 /* AppDelegate.swift */,
+				4345CF99218859D900594F58 /* ViewController.swift */,
+				4345CF9B218859D900594F58 /* Main.storyboard */,
+				4345CFA1218859D900594F58 /* Assets.xcassets */,
+				4345CFA3218859D900594F58 /* LaunchScreen.storyboard */,
+				4345CFA6218859D900594F58 /* Info.plist */,
+				4345CF9E218859D900594F58 /* Intelligent_Nurse.xcdatamodeld */,
+			);
+			path = "Intelligent Nurse";
+			sourceTree = "<group>";
+		};
+		4345CFAE218859D900594F58 /* Intelligent NurseTests */ = {
+			isa = PBXGroup;
+			children = (
+				4345CFAF218859D900594F58 /* Intelligent_NurseTests.swift */,
+				4345CFB1218859D900594F58 /* Info.plist */,
+			);
+			path = "Intelligent NurseTests";
+			sourceTree = "<group>";
+		};
+		4345CFB9218859D900594F58 /* Intelligent NurseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4345CFBA218859D900594F58 /* Intelligent_NurseUITests.swift */,
+				4345CFBC218859D900594F58 /* Info.plist */,
+			);
+			path = "Intelligent NurseUITests";
+			sourceTree = "<group>";
+		};
+		4345CFC921885C4100594F58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43BE78BC2188FFEF003F0D70 /* HealthKit.framework */,
+				7EB4FDBE52DF652EECA8A287 /* Pods_Intelligent_Nurse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4345CF93218859D900594F58 /* Intelligent Nurse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4345CFBF218859D900594F58 /* Build configuration list for PBXNativeTarget "Intelligent Nurse" */;
+			buildPhases = (
+				C340C0AD3CDD74109B1124B2 /* [CP] Check Pods Manifest.lock */,
+				4345CF90218859D900594F58 /* Sources */,
+				4345CF91218859D900594F58 /* Frameworks */,
+				4345CF92218859D900594F58 /* Resources */,
+				E97A11AEBEE12BC1F7559829 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Intelligent Nurse";
+			productName = "Intelligent Nurse";
+			productReference = 4345CF94218859D900594F58 /* Intelligent Nurse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4345CFAA218859D900594F58 /* Intelligent NurseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4345CFC2218859D900594F58 /* Build configuration list for PBXNativeTarget "Intelligent NurseTests" */;
+			buildPhases = (
+				4345CFA7218859D900594F58 /* Sources */,
+				4345CFA8218859D900594F58 /* Frameworks */,
+				4345CFA9218859D900594F58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4345CFAD218859D900594F58 /* PBXTargetDependency */,
+			);
+			name = "Intelligent NurseTests";
+			productName = "Intelligent NurseTests";
+			productReference = 4345CFAB218859D900594F58 /* Intelligent NurseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4345CFB5218859D900594F58 /* Intelligent NurseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4345CFC5218859D900594F58 /* Build configuration list for PBXNativeTarget "Intelligent NurseUITests" */;
+			buildPhases = (
+				4345CFB2218859D900594F58 /* Sources */,
+				4345CFB3218859D900594F58 /* Frameworks */,
+				4345CFB4218859D900594F58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4345CFB8218859D900594F58 /* PBXTargetDependency */,
+			);
+			name = "Intelligent NurseUITests";
+			productName = "Intelligent NurseUITests";
+			productReference = 4345CFB6218859D900594F58 /* Intelligent NurseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4345CF8C218859D900594F58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					New,
+				);
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = " Daria Firsova";
+				TargetAttributes = {
+					4345CF93218859D900594F58 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					4345CFAA218859D900594F58 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4345CF93218859D900594F58;
+					};
+					4345CFB5218859D900594F58 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4345CF93218859D900594F58;
+					};
+				};
+			};
+			buildConfigurationList = 4345CF8F218859D900594F58 /* Build configuration list for PBXProject "Intelligent Nurse" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4345CF8B218859D900594F58;
+			productRefGroup = 4345CF95218859D900594F58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4345CF93218859D900594F58 /* Intelligent Nurse */,
+				4345CFAA218859D900594F58 /* Intelligent NurseTests */,
+				4345CFB5218859D900594F58 /* Intelligent NurseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4345CF92218859D900594F58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4345CFA5218859D900594F58 /* LaunchScreen.storyboard in Resources */,
+				4345CFA2218859D900594F58 /* Assets.xcassets in Resources */,
+				4345CF9D218859D900594F58 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4345CFA9218859D900594F58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4345CFB4218859D900594F58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C340C0AD3CDD74109B1124B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Intelligent Nurse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E97A11AEBEE12BC1F7559829 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Intelligent Nurse/Pods-Intelligent Nurse-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Intelligent Nurse/Pods-Intelligent Nurse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4345CF90218859D900594F58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4345CF9A218859D900594F58 /* ViewController.swift in Sources */,
+				4345CF98218859D900594F58 /* AppDelegate.swift in Sources */,
+				4345CFA0218859D900594F58 /* Intelligent_Nurse.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4345CFA7218859D900594F58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4345CFB0218859D900594F58 /* Intelligent_NurseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4345CFB2218859D900594F58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4345CFBB218859D900594F58 /* Intelligent_NurseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4345CFAD218859D900594F58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4345CF93218859D900594F58 /* Intelligent Nurse */;
+			targetProxy = 4345CFAC218859D900594F58 /* PBXContainerItemProxy */;
+		};
+		4345CFB8218859D900594F58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4345CF93218859D900594F58 /* Intelligent Nurse */;
+			targetProxy = 4345CFB7218859D900594F58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4345CF9B218859D900594F58 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4345CF9C218859D900594F58 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4345CFA3218859D900594F58 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4345CFA4218859D900594F58 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4345CFBD218859D900594F58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4345CFBE218859D900594F58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4345CFC0218859D900594F58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CB308ACF2D6F883DCBE56E2 /* Pods-Intelligent Nurse.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Intelligent Nurse/Intelligent Nurse.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34PL8GRUEQ;
+				INFOPLIST_FILE = "Intelligent Nurse/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "perpendiculars.Intelligent-Nurse";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4345CFC1218859D900594F58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C89CA70944108AB844AF15C7 /* Pods-Intelligent Nurse.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Intelligent Nurse/Intelligent Nurse.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34PL8GRUEQ;
+				INFOPLIST_FILE = "Intelligent Nurse/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "perpendiculars.Intelligent-Nurse";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		4345CFC3218859D900594F58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34PL8GRUEQ;
+				INFOPLIST_FILE = "Intelligent NurseTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "perpendiculars.Intelligent-NurseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Intelligent Nurse.app/Intelligent Nurse";
+			};
+			name = Debug;
+		};
+		4345CFC4218859D900594F58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34PL8GRUEQ;
+				INFOPLIST_FILE = "Intelligent NurseTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "perpendiculars.Intelligent-NurseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Intelligent Nurse.app/Intelligent Nurse";
+			};
+			name = Release;
+		};
+		4345CFC6218859D900594F58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34PL8GRUEQ;
+				INFOPLIST_FILE = "Intelligent NurseUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "perpendiculars.Intelligent-NurseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Intelligent Nurse";
+			};
+			name = Debug;
+		};
+		4345CFC7218859D900594F58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34PL8GRUEQ;
+				INFOPLIST_FILE = "Intelligent NurseUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "perpendiculars.Intelligent-NurseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Intelligent Nurse";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4345CF8F218859D900594F58 /* Build configuration list for PBXProject "Intelligent Nurse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4345CFBD218859D900594F58 /* Debug */,
+				4345CFBE218859D900594F58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4345CFBF218859D900594F58 /* Build configuration list for PBXNativeTarget "Intelligent Nurse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4345CFC0218859D900594F58 /* Debug */,
+				4345CFC1218859D900594F58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4345CFC2218859D900594F58 /* Build configuration list for PBXNativeTarget "Intelligent NurseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4345CFC3218859D900594F58 /* Debug */,
+				4345CFC4218859D900594F58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4345CFC5218859D900594F58 /* Build configuration list for PBXNativeTarget "Intelligent NurseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4345CFC6218859D900594F58 /* Debug */,
+				4345CFC7218859D900594F58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4345CF9E218859D900594F58 /* Intelligent_Nurse.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4345CF9F218859D900594F58 /* Intelligent_Nurse.xcdatamodel */,
+			);
+			currentVersion = 4345CF9F218859D900594F58 /* Intelligent_Nurse.xcdatamodel */;
+			path = Intelligent_Nurse.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4345CF8C218859D900594F58 /* Project object */;
+}
