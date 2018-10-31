@@ -3,3 +3,5 @@ how to:
 
 1)  В терминале sudo gem install cocoapods
 2) В папке проекта (в одной директории с файлом Podfile) в терминале pod install 
+3) Запускать только workspace
+
