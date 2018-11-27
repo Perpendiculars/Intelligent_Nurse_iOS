@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2167597F8852E6E191C07F7F /* Pods_Intelligent_Nurse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EB4FDBE52DF652EECA8A287 /* Pods_Intelligent_Nurse.framework */; };
+		432ABB1121ACB16C000F89E8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432ABB1021ACB16C000F89E8 /* LoginViewController.swift */; };
+		432ABB1321ACB4EC000F89E8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432ABB1221ACB4EC000F89E8 /* SignUpViewController.swift */; };
 		4345CF98218859D900594F58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4345CF97218859D900594F58 /* AppDelegate.swift */; };
 		4345CF9A218859D900594F58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4345CF99218859D900594F58 /* ViewController.swift */; };
 		4345CF9D218859D900594F58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4345CF9B218859D900594F58 /* Main.storyboard */; };
@@ -16,6 +18,7 @@
 		4345CFA5218859D900594F58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4345CFA3218859D900594F58 /* LaunchScreen.storyboard */; };
 		4345CFB0218859D900594F58 /* Intelligent_NurseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4345CFAF218859D900594F58 /* Intelligent_NurseTests.swift */; };
 		4345CFBB218859D900594F58 /* Intelligent_NurseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4345CFBA218859D900594F58 /* Intelligent_NurseUITests.swift */; };
+		438EFAD521A3F9F6000278B9 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438EFAD421A3F9F6000278B9 /* Menu.storyboard */; };
 		43BE78BD2188FFEF003F0D70 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BE78BC2188FFEF003F0D70 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		2CB308ACF2D6F883DCBE56E2 /* Pods-Intelligent Nurse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intelligent Nurse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Intelligent Nurse/Pods-Intelligent Nurse.debug.xcconfig"; sourceTree = "<group>"; };
+		432ABB1021ACB16C000F89E8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		432ABB1221ACB4EC000F89E8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		4345CF94218859D900594F58 /* Intelligent Nurse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intelligent Nurse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4345CF97218859D900594F58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4345CF99218859D900594F58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +58,7 @@
 		4345CFBA218859D900594F58 /* Intelligent_NurseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intelligent_NurseUITests.swift; sourceTree = "<group>"; };
 		4345CFBC218859D900594F58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4345CFC821885C4100594F58 /* Intelligent Nurse.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Intelligent Nurse.entitlements"; sourceTree = "<group>"; };
+		438EFAD421A3F9F6000278B9 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		43BE78BC2188FFEF003F0D70 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		7EB4FDBE52DF652EECA8A287 /* Pods_Intelligent_Nurse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Intelligent_Nurse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C89CA70944108AB844AF15C7 /* Pods-Intelligent Nurse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intelligent Nurse.release.xcconfig"; path = "Pods/Target Support Files/Pods-Intelligent Nurse/Pods-Intelligent Nurse.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +129,9 @@
 				4345CF97218859D900594F58 /* AppDelegate.swift */,
 				4345CF99218859D900594F58 /* ViewController.swift */,
 				4345CF9B218859D900594F58 /* Main.storyboard */,
+				432ABB1221ACB4EC000F89E8 /* SignUpViewController.swift */,
+				432ABB1021ACB16C000F89E8 /* LoginViewController.swift */,
+				438EFAD421A3F9F6000278B9 /* Menu.storyboard */,
 				4345CFA1218859D900594F58 /* Assets.xcassets */,
 				4345CFA3218859D900594F58 /* LaunchScreen.storyboard */,
 				4345CFA6218859D900594F58 /* Info.plist */,
@@ -278,6 +287,7 @@
 				4345CFA5218859D900594F58 /* LaunchScreen.storyboard in Resources */,
 				4345CFA2218859D900594F58 /* Assets.xcassets in Resources */,
 				4345CF9D218859D900594F58 /* Main.storyboard in Resources */,
+				438EFAD521A3F9F6000278B9 /* Menu.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +364,8 @@
 				4345CF9A218859D900594F58 /* ViewController.swift in Sources */,
 				4345CF98218859D900594F58 /* AppDelegate.swift in Sources */,
 				4345CFA0218859D900594F58 /* Intelligent_Nurse.xcdatamodeld in Sources */,
+				432ABB1121ACB16C000F89E8 /* LoginViewController.swift in Sources */,
+				432ABB1321ACB4EC000F89E8 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
