@@ -10,14 +10,7 @@ import UIKit
 
 class LoginViewController: UIViewController
 {
-    override func viewDidLoad() {
-        if (UserDefaults.standard.integer(forKey: "FirstTime") == 1)
-        {
-            LoginText.text = UserDefaults.standard.string(forKey: "Login")
-            PasswordText.text = UserDefaults.standard.string(forKey: "Password")
-            TokenText.text = UserDefaults.standard.string(forKey: "Token")
-        }
-    }
+    
     
     @IBAction func LoginButton(_ sender: UIButton) {
         let login = LoginText.text
@@ -38,5 +31,15 @@ class LoginViewController: UIViewController
     @IBOutlet weak var LoginText: UITextField!
     @IBOutlet weak var PasswordText: UITextField!
     @IBOutlet weak var TokenText: UITextField!
+    
+    override func viewDidLoad() {
+        if (UserDefaults.standard.integer(forKey: "FirstTime") == 1)
+        {
+            LoginText.text = UserDefaults.standard.string(forKey: "Login")
+            PasswordText.text = UserDefaults.standard.string(forKey: "Password")
+            TokenText.text = UserDefaults.standard.string(forKey: "Token")
+        }
+    }
+    
 }
 
