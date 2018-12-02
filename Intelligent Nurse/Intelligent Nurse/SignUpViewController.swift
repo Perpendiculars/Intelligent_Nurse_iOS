@@ -17,5 +17,6 @@ class SignUpViewController: UIViewController
     @IBOutlet weak var TokenText: UITextField!
     
     @IBAction func SignUpButton(_ sender: UIButton) {
+
     }
 }

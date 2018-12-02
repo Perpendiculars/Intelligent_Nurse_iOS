@@ -59,18 +59,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZp-eY-Rjn">
-                                <rect key="frame" x="141" y="367" width="132" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.96010524312449241" green="0.83187084498147046" blue="0.70304879161102363" alpha="0.87788842429577463" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="23"/>
-                                <state key="normal" title="Log In"/>
-                                <connections>
-                                    <action selector="LoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="64w-BP-bPk"/>
-                                    <action selector="bunt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4w4-v7-oUq"/>
-                                    <segue destination="OXQ-2g-F5A" kind="show" id="k09-Tn-k7J"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUn-NK-NSb" customClass="UILogin">
                                 <rect key="frame" x="105" y="98" width="114" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -78,17 +66,31 @@
                                 <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Erl-QH-CwN">
-                                <rect key="frame" x="141" y="446" width="132" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEF-yZ-g3W">
+                                <rect key="frame" x="141" y="378" width="132" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.96010524310000001" green="0.83187084499999997" blue="0.7030487916" alpha="0.82237566019999997" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="24"/>
-                                <state key="normal" title="Sign up"/>
+                                <state key="normal" title="Login"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="kXa-FQ-pXL" kind="show" id="uIb-97-IAY"/>
+                                    <action selector="LoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eMQ-Dq-j7p"/>
+                                    <segue destination="OXQ-2g-F5A" kind="show" id="ogo-Fp-3TW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCY-2S-ovT">
+                                <rect key="frame" x="141" y="456" width="132" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96010524310000001" green="0.83187084499999997" blue="0.7030487916" alpha="0.82237566019999997" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="24"/>
+                                <state key="normal" title="Сайнап"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="kXa-FQ-pXL" kind="show" id="yQ6-6e-OJN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -122,7 +124,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="A9z-ug-PJU">
             <objects>
-                <viewController id="kXa-FQ-pXL" customClass="SignUpViewController" sceneMemberID="viewController">
+                <viewController id="kXa-FQ-pXL" customClass="SignUpViewController" customModule="Intelligent_Nurse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8u4-di-gCn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -168,7 +170,7 @@
                                     <color key="titleColor" red="0.20610597729682922" green="0.47088390588760376" blue="0.96475857496261597" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <action selector="SignUpButton:" destination="kXa-FQ-pXL" eventType="touchUpInside" id="eES-yb-j16"/>
+                                    <action selector="SignUpButton:" destination="kXa-FQ-pXL" eventType="touchUpInside" id="Ell-aU-s2O"/>
                                 </connections>
                             </button>
                         </subviews>
