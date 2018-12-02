@@ -33,13 +33,17 @@ class LoginViewController: UIViewController
                 "Password" : password,
                 "Token" : token
             ]
-            let user_url = URL(string: "https://intelligentnurse.azurewebsites.net/")
+            let user_url = URL(string: "https://intelligentnurse.azurewebsites.net/User/Create")
             var request = URLRequest(url: user_url!)
             request.httpMethod = "POST"
-            let postData = (login! + " " + password! + " " + token!).data(using: .utf8)
+            let postData = (token! + " " + login! + " " + password!).data(using: .utf8)
             Alamofire.request(user_url!, method: .post, parameters: params).responseJSON { response in
                 if response.result.isSuccess {
                     print("RABOTAYET, SOBAKA!")
+                }
+                else
+                {
+                    print("ne rabotayet")
                 }
             }
         }
