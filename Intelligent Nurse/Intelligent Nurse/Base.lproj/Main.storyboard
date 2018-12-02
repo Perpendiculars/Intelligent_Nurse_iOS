@@ -171,6 +171,7 @@
                                 </state>
                                 <connections>
                                     <action selector="SignUpButton:" destination="kXa-FQ-pXL" eventType="touchUpInside" id="Ell-aU-s2O"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="OoI-TI-zgL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -197,4 +198,7 @@
     <resources>
         <image name="background" width="753.205810546875" height="1409.2237548828125"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="OoI-TI-zgL"/>
+    </inferredMetricsTieBreakers>
 </document>

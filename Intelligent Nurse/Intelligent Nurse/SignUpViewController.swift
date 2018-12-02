@@ -32,14 +32,14 @@ class SignUpViewController: UIViewController
             UserDefaults.standard.set(password, forKey: "Password")
             UserDefaults.standard.set(token, forKey: "Token")
             let params = [
-                "Email" : login,
+                "Token" : token,
                 "Password" : password,
-                "Token" : token
+                "Email" : login
             ]
             let user_url = URL(string: "https://intelligentnurse.azurewebsites.net/User/Create")
             var request = URLRequest(url: user_url!)
             request.httpMethod = "POST"
-            let postData = (token! + " " + login! + " " + password!).data(using: .utf8)
+            let postData = (token! + " " + login! + " " + password!)
             Alamofire.request(user_url!, method: .post, parameters: params).responseJSON { response in
                 if response.result.isSuccess {
                     print("RABOTAYET, SOBAKA!")
