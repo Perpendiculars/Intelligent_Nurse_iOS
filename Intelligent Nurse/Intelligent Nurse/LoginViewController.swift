@@ -33,7 +33,7 @@ class LoginViewController: UIViewController
                 "Password" : password,
                 "Email" : login
             ]
-            let user_url = URL(string: "https://intelligentnurse.azurewebsites.net/User/Create")
+            let user_url = URL(string: "https://intelligentnurse.azurewebsites.net/Login/")
             var request = URLRequest(url: user_url!)
             request.httpMethod = "POST"
             let postData = (token! + " " + login! + " " + password!)
