@@ -77,7 +77,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="LoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eMQ-Dq-j7p"/>
-                                    <segue destination="OXQ-2g-F5A" kind="show" id="ogo-Fp-3TW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCY-2S-ovT">
@@ -106,6 +105,7 @@
                         <outlet property="LoginText" destination="b47-K6-u4o" id="3Sv-0s-aV3"/>
                         <outlet property="PasswordText" destination="5Dk-2k-dId" id="9Sn-7K-qqL"/>
                         <outlet property="TokenText" destination="kEE-yD-wtN" id="uER-fO-blB"/>
+                        <segue destination="OXQ-2g-F5A" kind="show" identifier="Menu" id="b5j-mJ-1bj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -116,7 +116,7 @@
         <!--Menu-->
         <scene sceneID="Xkf-Wx-ahZ">
             <objects>
-                <viewControllerPlaceholder storyboardName="Menu" id="OXQ-2g-F5A" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="12" storyboardName="Menu" id="OXQ-2g-F5A" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QR3-0q-iUL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="133" y="606"/>
@@ -171,7 +171,6 @@
                                 </state>
                                 <connections>
                                     <action selector="SignUpButton:" destination="kXa-FQ-pXL" eventType="touchUpInside" id="Ell-aU-s2O"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="OoI-TI-zgL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -187,6 +186,7 @@
                         <outlet property="LoginText" destination="XcW-iJ-bp2" id="tAM-IT-wbb"/>
                         <outlet property="PasswordText" destination="2hR-qD-2I5" id="qET-Sb-5fm"/>
                         <outlet property="TokenText" destination="l1E-WW-WBc" id="GEb-Ex-IJg"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="Created" id="quz-XZ-9AL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qc0-Nd-ahE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -199,7 +199,6 @@
         <image name="background" width="753.205810546875" height="1409.2237548828125"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yQ6-6e-OJN"/>
-        <segue reference="OoI-TI-zgL"/>
+        <segue reference="quz-XZ-9AL"/>
     </inferredMetricsTieBreakers>
 </document>

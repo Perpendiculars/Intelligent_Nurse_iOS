@@ -28,17 +28,19 @@ class LoginViewController: UIViewController
             UserDefaults.standard.set(login, forKey: "Login")
             UserDefaults.standard.set(password, forKey: "Password")
             UserDefaults.standard.set(token, forKey: "Token")
-            let params = [
-                "parameters" : login! + " " + password! + " " + token!
-            ]
-            
-            Alamofire.request("http://nursecloud.azurewebsites.net/Login", method: .post, parameters: ["Email":login!,"Password":password!,"Token":token!]).responseString { response in
-                if response.result.isSuccess {
-                    print("RABOTAYET, SOBAKA!")
+            let headers: HTTPHeaders = ["parameters":login! + " " + password! + " " + token!]
+            print(headers)
+            let user_url = "http://nursecloud.azurewebsites.net/Login"
+            Alamofire.request(user_url, method: .post, encoding: URLEncoding.httpBody, headers: headers).responseString { response in
+                if ((response.response?.statusCode)! == 200) {
+                    print((response.response?.statusCode)!)
+                    self.performSegue(withIdentifier: "Menu", sender: self)
                 }
-                else
-                {
-                    print("ne rabotayet")
+                else {
+                    print((response.response?.statusCode)!)
+                    let alert = UIAlertController(title: "Warning", message: "Wrong data", preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
                 }
             }
         }

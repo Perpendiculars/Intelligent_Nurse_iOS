@@ -31,42 +31,20 @@ class SignUpViewController: UIViewController
             UserDefaults.standard.set(login, forKey: "Login")
             UserDefaults.standard.set(password, forKey: "Password")
             UserDefaults.standard.set(token, forKey: "Token")
-            let params = ["parameters":login! + " " + password! + " " + token!]
-            print(params)
+            let headers: HTTPHeaders = ["parameters":login! + " " + password! + " " + token!]
             let user_url = "http://nursecloud.azurewebsites.net/SignIn"
-//
-//            request(user_url, method: .post, parameters: params).validate().responseString { responseString in
-//
-//                switch responseString.result {
-//                case .success(let value):
-//                    print(value)
-//
-//                case .failure(let error):
-//                    print(responseString.request?.httpBody!)
-//                    print(responseString.request?.httpMethod)
-//                    print(responseString.request?.description)
-//                }
-//            }
 
-            
-            Alamofire.request("http://nursecloud.azurewebsites.net/SignIn", method: .post, parameters: params, encoding: URLEncoding.httpBody).responseJSON { response in
-                if response.result.isSuccess {
-                    print("RABOTAYET, SOBAKA!")
-                    print(response.request)  // original URL request
-                    print(response.response) // URL response
-                    print(response.data)     // server data
-                    print(response.result)   // result of response serialization
+            Alamofire.request(user_url, method: .post, encoding: URLEncoding.httpBody, headers: headers).responseString { response in
+                if ((response.response?.statusCode)! == 200) {
+                    print((response.response?.statusCode)!)
+                    self.performSegue(withIdentifier: "Created", sender: self)
                 }
                 else
                 {
-                    print("RESPONSE: ")
-                    print(String.init(data: (response.request?.httpBody)!, encoding: String.Encoding.utf8)!)  // original URL request
-                    print(response.request?.value)  // original URL request
-
-                    print(response.request)  // original URL request
-                    print(response.response!) // URL response
-                    print(String.init(data: response.data!, encoding: String.Encoding.utf8)!)     // server data
-                    print(response.result)   // result of response serialization
+                    print((response.response?.statusCode)!)
+                    let alert = UIAlertController(title: "Warning", message: "Wrong data", preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
                 }
             }
         }
