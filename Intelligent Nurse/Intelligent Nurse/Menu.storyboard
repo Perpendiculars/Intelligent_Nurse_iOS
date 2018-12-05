@@ -36,6 +36,9 @@
                                 <state key="normal" title="Connect to camera">
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="3XY-9K-HYq" kind="show" id="hVR-Pw-5hj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKg-ZE-Zvt">
                                 <rect key="frame" x="67" y="228" width="142" height="41"/>
@@ -136,6 +139,35 @@
                 <tapGestureRecognizer id="wxd-jc-4g8"/>
             </objects>
             <point key="canvasLocation" x="785.50724637681162" y="173.64130434782609"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vs8-88-okl">
+            <objects>
+                <viewController id="3XY-9K-HYq" customClass="ViewController" customModule="Intelligent_Nurse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JX2-tY-UFp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fOJ-wr-gmg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="chG-nT-QA3"/>
+                    </view>
+                    <connections>
+                        <outlet property="WebView" destination="fOJ-wr-gmg" id="KQG-WL-Xft"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dbH-uH-st5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="786" y="893"/>
         </scene>
     </scenes>
     <resources>
