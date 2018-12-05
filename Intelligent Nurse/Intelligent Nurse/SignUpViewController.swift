@@ -31,22 +31,42 @@ class SignUpViewController: UIViewController
             UserDefaults.standard.set(login, forKey: "Login")
             UserDefaults.standard.set(password, forKey: "Password")
             UserDefaults.standard.set(token, forKey: "Token")
-            let params = [
-                "Token" : token,
-                "Password" : password,
-                "Email" : login
-            ]
-            let user_url = URL(string: "https://intelligentnurse.azurewebsites.net/SignIn/")
-            var request = URLRequest(url: user_url!)
-            request.httpMethod = "POST"
-            let postData = (token! + " " + login! + " " + password!)
-            Alamofire.request(user_url!, method: .post, parameters: params).responseJSON { response in
+            let params = ["parameters":login! + " " + password! + " " + token!]
+            print(params)
+            let user_url = "http://nursecloud.azurewebsites.net/SignIn"
+//
+//            request(user_url, method: .post, parameters: params).validate().responseString { responseString in
+//
+//                switch responseString.result {
+//                case .success(let value):
+//                    print(value)
+//
+//                case .failure(let error):
+//                    print(responseString.request?.httpBody!)
+//                    print(responseString.request?.httpMethod)
+//                    print(responseString.request?.description)
+//                }
+//            }
+
+            
+            Alamofire.request("http://nursecloud.azurewebsites.net/SignIn", method: .post, parameters: params, encoding: URLEncoding.httpBody).responseJSON { response in
                 if response.result.isSuccess {
                     print("RABOTAYET, SOBAKA!")
+                    print(response.request)  // original URL request
+                    print(response.response) // URL response
+                    print(response.data)     // server data
+                    print(response.result)   // result of response serialization
                 }
                 else
                 {
-                    print("ne rabotayet")
+                    print("RESPONSE: ")
+                    print(String.init(data: (response.request?.httpBody)!, encoding: String.Encoding.utf8)!)  // original URL request
+                    print(response.request?.value)  // original URL request
+
+                    print(response.request)  // original URL request
+                    print(response.response!) // URL response
+                    print(String.init(data: response.data!, encoding: String.Encoding.utf8)!)     // server data
+                    print(response.result)   // result of response serialization
                 }
             }
         }

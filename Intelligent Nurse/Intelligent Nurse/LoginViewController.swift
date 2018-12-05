@@ -29,15 +29,10 @@ class LoginViewController: UIViewController
             UserDefaults.standard.set(password, forKey: "Password")
             UserDefaults.standard.set(token, forKey: "Token")
             let params = [
-                "Token" : token,
-                "Password" : password,
-                "Email" : login
+                "parameters" : login! + " " + password! + " " + token!
             ]
-            let user_url = URL(string: "https://intelligentnurse.azurewebsites.net/Login/")
-            var request = URLRequest(url: user_url!)
-            request.httpMethod = "POST"
-            let postData = (token! + " " + login! + " " + password!)
-            Alamofire.request(user_url!, method: .post, parameters: params).responseJSON { response in
+            
+            Alamofire.request("http://nursecloud.azurewebsites.net/Login", method: .post, parameters: ["Email":login!,"Password":password!,"Token":token!]).responseString { response in
                 if response.result.isSuccess {
                     print("RABOTAYET, SOBAKA!")
                 }

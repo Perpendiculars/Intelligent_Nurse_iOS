@@ -199,6 +199,7 @@
         <image name="background" width="753.205810546875" height="1409.2237548828125"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="yQ6-6e-OJN"/>
         <segue reference="OoI-TI-zgL"/>
     </inferredMetricsTieBreakers>
 </document>
