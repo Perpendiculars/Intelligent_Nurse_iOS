@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     @objc func canRotate() -> Void {}
     override func viewDidLoad() {
-        //canRotate()
+        canRotate()
         //WebView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI_2));
         super.viewDidLoad()
         let value = UIInterfaceOrientation.landscapeRight.rawValue;

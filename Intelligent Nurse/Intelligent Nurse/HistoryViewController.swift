@@ -18,30 +18,31 @@ class HistoryViewController: UIViewController {
             UIDevice.current.setValue(Int(UIInterfaceOrientation.portrait.rawValue), forKey: "orientation")
         }
     }
-    func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-        return .landscape
-    }
     @objc func canRotate() -> Void {}
     override func viewDidLoad() {
-        //canRotate()
-        //WebView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI_2));
-        super.viewDidLoad()
-        let value = UIInterfaceOrientation.landscapeRight.rawValue;
+        self.WebView.scrollView.zoomScale = 0.2
+        canRotate()
+        let value = UIInterfaceOrientation.landscapeLeft.rawValue
         UIDevice.current.setValue(value, forKey: "orientation")
-        let url = URL(string: "http://nursecloud.azurewebsites.net/Archive/GetTranslation/acwnbfd8")
-        print(url)
+        (UIApplication.shared.delegate as! AppDelegate).restrictRotation = .all
+        super.viewDidLoad()
+        let url = URL(string: "http://nursecloud.azurewebsites.net/Archive/Index/" + String(UserDefaults.standard.string(forKey: "Token")!))
         let request = URLRequest(url: url!)
         WebView.load(request)
-        //        let backButton = UIBarButtonItem(title: "", style: .plain, target: navigationController, action: nil)
-        //        navigationItem.leftBarButtonItem = backButton
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(buttonAction))
     }
     
+    override var shouldAutorotate: Bool {
+        return true
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        get {
+            return .landscapeRight
+            
+        }
+    }
     @objc func buttonAction(sender: UIBarButtonItem!) {
-        //let url = URL(string: "http://nursecloud.azurewebsites.net/Translation/Stop/" + (UserDefaults.standard.string(forKey: "Token"))!)
-        //print(url)
-        //let request = URLRequest(url: url!)
-        //WebView.load(request)
         self.navigationController?.popViewController(animated: true)
     }
 }
