@@ -10,6 +10,13 @@ import UIKit
 import WebKit
 class ViewController: UIViewController {
     
+    @IBAction func callButton(_ sender: Any) {
+        if  let phone = UserDefaults.standard.string(forKey : "Phone") as? String,
+            let tel = URL(string: "tel://\(phone))") {
+            UIApplication.shared.openURL(tel)
+        }
+    
+    }
     @IBOutlet weak var WebView: WKWebView!
     
     override func viewWillDisappear(_ animated: Bool) {

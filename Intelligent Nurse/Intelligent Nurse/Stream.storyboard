@@ -27,6 +27,14 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y01-g4-f66">
+                                <rect key="frame" x="640" y="324" width="51" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="emergency-call-2"/>
+                                <connections>
+                                    <action selector="callButton:" destination="P5D-zo-X6e" eventType="touchUpInside" id="5gl-L7-IiF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Xfc-23-8xq"/>
@@ -40,4 +48,7 @@
             <point key="canvasLocation" x="669.29347826086962" y="-178.2608695652174"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="emergency-call-2" width="51.200000762939453" height="51.200000762939453"/>
+    </resources>
 </document>
