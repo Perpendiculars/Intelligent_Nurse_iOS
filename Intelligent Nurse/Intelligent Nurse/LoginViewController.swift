@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class LoginViewController: UIViewController
+class LoginViewController: UIViewController, UITextFieldDelegate
 {
     
     
@@ -56,8 +56,15 @@ class LoginViewController: UIViewController
             LoginText.text = UserDefaults.standard.string(forKey: "Login")
             PasswordText.text = UserDefaults.standard.string(forKey: "Password")
             TokenText.text = UserDefaults.standard.string(forKey: "Token")
+            PasswordText.delegate = self
+            LoginText.delegate = self
+            TokenText.delegate = self
         }
     }
     
+    func textFieldShouldReturn(_ scoreText: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
 }
 

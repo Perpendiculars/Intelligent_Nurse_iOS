@@ -37,7 +37,7 @@
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3XY-9K-HYq" kind="show" id="hVR-Pw-5hj"/>
+                                    <segue destination="JhB-Qv-S4N" kind="show" id="Rqz-b5-OPX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKg-ZE-Zvt">
@@ -45,9 +45,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Show records"/>
+                                <connections>
+                                    <segue destination="KOT-u1-WCJ" kind="show" id="kZN-sQ-UVb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzW-Lb-gRp">
-                                <rect key="frame" x="67" y="306" width="86" height="41"/>
+                                <rect key="frame" x="67" y="292" width="86" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Settings"/>
@@ -138,37 +141,29 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kb1-2b-MUm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="wxd-jc-4g8"/>
             </objects>
-            <point key="canvasLocation" x="785.50724637681162" y="173.64130434782609"/>
+            <point key="canvasLocation" x="848" y="-361"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="vs8-88-okl">
+        <!--Stream-->
+        <scene sceneID="hqo-tr-UVG">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="flipHorizontal" modalPresentationStyle="overFullScreen" id="3XY-9K-HYq" customClass="ViewController" customModule="Intelligent_Nurse" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="JX2-tY-UFp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <wkWebView contentMode="center" semanticContentAttribute="playback" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fOJ-wr-gmg">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="chG-nT-QA3"/>
-                    </view>
-                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
-                    <connections>
-                        <outlet property="WebView" destination="fOJ-wr-gmg" id="KQG-WL-Xft"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dbH-uH-st5" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Stream" id="HlZ-og-Zvz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mzJ-iv-hyk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="786" y="893"/>
+        </scene>
+        <!--Stream-->
+        <scene sceneID="tb9-PV-ZPb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Stream" id="JhB-Qv-S4N" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vpQ-5l-pTM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="135"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="Fq2-JM-eRi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="History" id="KOT-u1-WCJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UZt-b8-JzM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>

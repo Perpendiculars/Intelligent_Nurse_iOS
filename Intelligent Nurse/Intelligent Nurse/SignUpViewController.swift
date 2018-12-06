@@ -9,7 +9,7 @@
 import Alamofire
 import UIKit
 
-class SignUpViewController: UIViewController
+class SignUpViewController: UIViewController, UITextFieldDelegate
 {
     
     @IBOutlet weak var PasswordText: UITextField!
@@ -48,5 +48,17 @@ class SignUpViewController: UIViewController
                 }
             }
         }
+    }
+    
+    override func viewDidLoad(){
+        super.viewDidLoad()
+        PasswordText.delegate = self
+        LoginText.delegate = self
+        TokenText.delegate = self
+    }
+    
+    func textFieldShouldReturn(_ scoreText: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
     }
 }
